@@ -1,0 +1,5 @@
+db.firstCollection.aggregate([
+                     { $group: 
+                        { _id: "$dept", 
+                        totalSalaries: { $sum: "$salary" } } }
+                   ])
